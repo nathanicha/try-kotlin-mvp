@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/relLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="user_id" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_id"
+        android:layout_alignStart="@+id/user_id"
+        android:layout_below="@+id/user_id"
+        android:text="user_name" />
+
+    <TextView
+        android:id="@+id/user_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:text="user_username" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_username"
+        android:text="user_email" />
+
+    <Button
+        android:id="@+id/button_todo"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_id"
+        android:layout_alignBottom="@+id/user_id"
+        android:layout_toStartOf="@+id/button_topost"
+        android:text="TO DO"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/button_topost"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_album"
+        android:layout_alignBottom="@+id/button_album"
+        android:layout_toStartOf="@+id/button_album"
+        android:text="TO P/C"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/button_album"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_id"
+        android:layout_alignBottom="@+id/user_id"
+        android:layout_alignParentEnd="true"
+        android:text="ALBUM"
+        android:textSize="8sp" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_toStartOf="@+id/button_website"
+        android:id="@+id/button_edit"
+        android:text="Edit"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/button_website"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/user_name"
+        android:text="website"
+        android:textSize="8sp" />
+</RelativeLayout>
